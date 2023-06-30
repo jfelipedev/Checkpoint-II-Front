@@ -36,7 +36,6 @@ function* getCharactersSaga() {
     const response: ResponseGenerator = yield call(getCharacters);
     if (response.data) {
       yield put({ type: "GET_CHARACTERS", payload: response.data.results });
-      console.log(response.data);
     }
   } catch (error) {
     console.log("Deu ruim ao buscar personagens");
