@@ -1,0 +1,20 @@
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  height: 500px;
+  background: #6527be;
+  justify-content: center;
+  border-radius: 5px;
+  color: white;
+  
+}
+img{
+  border-radius: 5px 5px 0 0;
+}
+.card:hover {
+  background: #45CFDD;
+  transform: scale(1.05);
+}
+
+
