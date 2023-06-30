@@ -23,24 +23,43 @@ html {
   gap: 10px;
 }
 
-.maind-cointainer input{
+.maind-cointainer input {
   margin-bottom: 100px;
 }
-.pagination{
+.pagination {
   list-style: none;
   display: flex;
-  gap: 5px
+  gap: 5px;
 }
 
-.pagination button{
-  background: #45CFDD;
+.pagination button {
+  background: #45cfdd;
   padding: 8px 15px;
   border: 0;
   border-radius: 5px;
-  color: white;  
+  color: white;
 }
 
+.pagination button:hover {
+  background: #6527be;
+}
 
-.pagination button:hover{
-  background: #6527BE;
+@media (max-width: 930px) {
+  .main-container {
+    gap: 20px;
+  }
+  
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .main-container {
+    gap: 10px;
+  }
+  
+  .card-container {
+    grid-template-columns: 1fr;
+  }
 }

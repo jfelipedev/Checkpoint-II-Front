@@ -7,14 +7,36 @@
   justify-content: center;
   border-radius: 5px;
   color: white;
-  
 }
-img{
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
   border-radius: 5px 5px 0 0;
 }
+
 .card:hover {
   background: #45CFDD;
   transform: scale(1.05);
 }
 
 
+@media (max-width: 930px) {
+  .card {
+    width: 200px;
+    height: 350px;
+  }
+
+  
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 200px;
+    height: 300px;
+  }
+  h1{
+    font-size: 150%;
+  }
+}
